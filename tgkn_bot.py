@@ -91,11 +91,11 @@ async def main():
 
 
 
-TOKEN = "6811336708:AAGtFMAf0MTBySyGTLBvHxpdKRjWjKOAg00"
+TOKEN = "6906717566:AAE1zCYjMqxJZ5WrlaGcpupwqHvw5pdMvvk"
 yelblu = determine_week_color()
-GROUP_CHAT_ID = "-1001850546376"
+GROUP_CHAT_ID = "719562540"
 GROUP_CHAT_ID2 = "-1001935371745"
-main_id = "971229719"
+main_id = "719562540"
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
 
@@ -303,7 +303,7 @@ schedule.every().tuesday.at("15:35").do(lambda: asyncio.create_task(biol(GROUP_C
 schedule.every().wednesday.at("08:55").do(lambda: asyncio.create_task(istorUk(GROUP_CHAT_ID)))
 schedule.every().wednesday.at("10:45").do(lambda: asyncio.create_task(kultura(GROUP_CHAT_ID)))
 schedule.every().wednesday.at("12:25").do(lambda: asyncio.create_task(fizika(GROUP_CHAT_ID))) #Поменять потом на 12:25
-schedule.every().wednesday.at("14:23").do(lambda: asyncio.create_task(ZSU(GROUP_CHAT_ID)))
+schedule.every().saturday.at("15:35").do(lambda: asyncio.create_task(ZSU(GROUP_CHAT_ID)))
 
 # Четверг
 if yelblu == "yel":
